@@ -1,0 +1,137 @@
+	<!DOCTYPE HTML>
+	<html>
+	<head>
+		<title>Axis Online Banking Application</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<!-- Brand -->
+			<a class="navbar-brand" href="#">AXIS BANK</a>
+			
+			<!-- Links -->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="Bank.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="new_acc.html">New Registration</a>
+				</li>
+				
+				<!-- Dropdown -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						Explore
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="withdrawn.html">Withdrawl Amount </a>
+						<a class="dropdown-item" href="Deposite.html">Deposite Amount</a>
+						<a class="dropdown-item" href="Fund.html">Fund Transfer</a>
+						<a class="dropdown-item" href="Checkbal.html">Check Balance</a>
+						<a class="dropdown-item" href="Accdetails.html">Account Details</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div class="container"> 
+			
+			<h2 class="new-heading">New Account Registration</h2>
+			
+			
+			<form class="form-b">
+				
+				<div class="row">
+					<div class="form-group col-md-6">
+						<label for="formGroupExampleInput">First Name</label>
+						<input type="text" class="form-control" pattern="^[a-zA-Z]*$" title="Enter only alphabets" id="formGroupExampleInput" placeholder="First Name">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="formGroupExampleInput">Last Name</label>
+						<input type="text" class="form-control" pattern="^[a-zA-Z]*$" title="Enter only alphabets" id="formGroupExampleInput" placeholder="Last Name">
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-6">
+						<label for="formGroupExampleInput2">Contact Number</label>
+						<input type="text" class="form-control" title="Enter valid Phone number" pattern="^\d{10}$" maxlength="10" id="formGroupExampleInput2" placeholder="Contact Number">
+					</div>
+					
+					<div class = "form-group col-md-3">
+						<label for="gender" class="gd">Gender</label>
+						<div class="form-check-inline">
+							<label class="form-check-label" for="radio1">
+								<input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Male
+							</label>
+							<label class="form-check-label" for="radio2">
+								<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Female
+							</label>
+						</div>
+					</div>
+					
+					<div class="form-group col-md-3">
+						<label for="formDOB">Date of birth</label>
+						<input type="date" class="form-control" id="formDOB" placeholder="Another input">
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-6">
+						<label for="formGroupExampleInput2">Email</label>
+						<input type="email" class="form-control" title="Enter valid Email Id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"  id="formGroupExampleInput2" placeholder="Email-ID">
+					</div>
+					
+					<div class="form-group col-md-6">
+						<label for="sel1">Account Type</label>
+						<select class="form-control" id="sel1">
+							<option>Select one</option>
+							<option>Current Account</option>
+							<option>Savings Account</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="inputAddress">Address</label>
+					<input type="text" class="form-control" id="inputAddress" placeholder="Home Address">
+				</div>
+				
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="inputCity">City</label>
+						<input type="text" class="form-control" pattern="^[a-zA-Z]*$" title="Enter only alphabets" id="inputCity" placeholder="City">
+					</div>
+					<div class="form-group col-md-4">
+						<label for="inputState">State</label>
+						<select id="inputState" class="form-control" placeholder="State">
+							<option selected>Select one</option>
+							<option>...</option>
+						</select>
+					</div>
+					<div class="form-group col-md-2">
+						<label for="inputZip">Zip</label>
+						<input type="text" class="form-control" pattern="^\d{6}$" maxlength="6" id="inputZip" placeholder="Postal Code">
+					</div>
+				</div>
+				
+				
+				<div class="form-group">
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="gridCheck">
+						<label class="form-check-label" for="gridCheck">
+							Agree Terms and Conditions
+						</label>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Sign in</button>
+			</div>
+			
+		</form>
+		
+	</div>
+	
+</body>
+</html>
